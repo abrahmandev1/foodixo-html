@@ -1,0 +1,113 @@
+.recipe_video_card {
+    background-color: #e6f9fc;
+    border-radius: 20px;
+    padding: 30px;
+
+    h2 {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        margin-bottom: 18px;
+        font-weight: 600;
+    }
+}
+
+.recipe_video_left_area {
+    position: relative;
+
+    @keyframes pulse {
+        0% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.1); }
+        100% { transform: translate(-50%, -50%) scale(1); }
+    }
+    
+    .recipe_video_svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .recipe_video_svg:hover {
+        animation: pulse 1s ease-in-out infinite;
+    } 
+    
+}
+
+
+
+#recipe_video .video_modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  
+    &.active {
+      display: flex;
+    }
+  
+    .video_modal_content {
+      position: relative;
+      max-width: 90%;
+      width: 800px;
+  
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+        border-radius: 10px;
+      }
+  
+      .close_modal {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  
+
+.recipe_video_card .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+    span {
+        color: rgba(0, 0, 0, 0.60);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.recipe_video_card .info-row:last-of-type {
+    border-bottom: none;
+}
+
+.recipe_video_bottom {
+    margin-top: 95px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-size: 16px;
+}
+
+.recipe_video_bottom_text {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 30px;
+}

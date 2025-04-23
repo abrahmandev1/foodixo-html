@@ -1,0 +1,116 @@
+.recipe_card {
+    background: $white; 
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 30px;
+
+    .recipe_image_area {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+        .price_tag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            span {
+                background: rgb(255 122 26 / 15%);
+                color: #FF7A1A;
+                padding: 8px 15px;
+                font-size: 16px;
+            }
+        }
+
+        .card_icons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        a {
+            width: 30px;
+            display: block;
+            height: 30px;
+            background: #fff;
+            color: #FF7A1A;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+			box-shadow: 0px 14px 12px rgba(0,0,0, 0.1);
+            transition: all 0.4s ease-in-out;
+        }
+
+        a:hover {
+            background: #FF7A1A;
+            color: #fff;
+        }
+
+        
+    }
+
+    .recipe_info_area {
+        padding: 20px 25px 35px;
+
+        h5 a {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            margin-bottom: 24px;
+            color: $primarytextcolor;
+        }
+        .food_timer {
+            margin-top: 24px;
+
+            span {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+
+            svg {
+                margin-right: 8px;
+            }
+
+            path {
+                fill: $primarycolor;
+            }
+        }
+    }
+
+}
+.social_icon_list {
+    position: absolute;
+    transform: translateY(90%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.recipe_card:hover .social_icon_list {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+.social_icon_list li a {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.social_icon_list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.price_tag span {
+    transition: all 0.4s ease-in-out;
+}
+.recipe_card:hover .price_tag span {
+    background: #FF7A1A;
+    color: #fff;
+}

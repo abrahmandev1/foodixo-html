@@ -1,0 +1,172 @@
+
+.ingredient_title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.ingredient_section_item {
+  h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  .ingredient_item_list li {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    padding-bottom: 25px;
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+  }
+
+}
+
+/* Style the label to use flexbox for centering */
+.custom-checkbox {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.checkbox_2 li {
+    margin-bottom: 20px;
+    color: #fff;
+}
+/* Hide the default checkbox */
+.custom-checkbox input {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #333;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the checkbox when checked */
+.custom-checkbox input:checked + .checkmark {
+	border-radius: 4px;
+	border: 1px solid #333;
+	background: #262626;
+}
+
+/* Add a checkmark inside the checkbox when checked */
+.custom-checkbox input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Add hover effect */
+.custom-checkbox .checkmark:hover {
+  border-color: #333;
+}
+
+/* Style the text */
+.custom-checkbox .text {
+  font-size: 18px;
+  color: #000;
+}
+
+
+
+.step_number {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+
+  .text {
+    font-size: 24px
+  }
+}
+
+.direction_step {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  margin-bottom: 45px;
+
+    p {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 45px;
+    }
+
+    img {
+      margin-bottom: 45px;
+    }
+}
+
+// right side
+
+.ingredient_right_title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.ingredient_right_list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.recipe-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.recipe-info {
+  flex: 1;
+}
+
+
+
+.ingredient_author {
+  display: grid;
+  gap: 6px;
+
+    h3 {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+    span {
+      color: rgba(0, 0, 0, 0.60);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+    }
+}
+
+.ingredient_promo {
+  margin-top: 50px;
+
+  img {
+    width: 100%;
+}
+}

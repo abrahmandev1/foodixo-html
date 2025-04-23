@@ -1,0 +1,82 @@
+
+
+.menu_item_area {
+    border: 1px solid #ddd;
+    padding: 30px 22px 30px;
+    background: rgba(255, 122, 26, 0.05);
+}
+
+.menu_item_area_items {
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+    text-align: left;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.menu_item_area_items:last-child {
+    border-bottom: none;
+}
+
+
+
+
+.king_crab:hover {
+    cursor: url('../../img/menuitem/1.jpg'), auto;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.alaskan_crab:hover {
+    cursor: url('../../img/menuitem/2.jpg'), auto;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.pizza:hover {
+    cursor: url('../../img/menuitem/3.jpg'), auto;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.fberger:hover {
+    cursor: url('../../img/menuitem/4.jpg'), auto;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.soup:hover {
+    cursor: url('../../img/menuitem/5.jpg'), auto;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item strong {
+    display: block;
+    font-size: 16px;
+}
+
+.price {
+    color: #FF7A1A;
+    font-weight: 700;
+    float: right;
+}
+
+.description {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.food_section_title {
+    width: 75%;
+}

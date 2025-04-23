@@ -1,0 +1,49 @@
+.blogpost_guide_all_area {
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+}
+
+
+  .blogpost_guide_author_section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+
+  .blogpost_guide_author_name {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .blogpost_guide_author_section .date {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+  .blogpost_guide_author_section .divider {
+    height: 20px;
+    width: 1px;
+    background-color: #ccc;
+  }
+  .description {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 880px;
+}

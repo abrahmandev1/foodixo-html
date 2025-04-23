@@ -1,0 +1,24 @@
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: #FF7A1A;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+  #toTopBtn:hover {
+    opacity: 0.9;
+  }
+
+  #toTopBtn svg {
+    display: block;
+  }

@@ -1,0 +1,306 @@
+/************************************************Start Gift Course ********************************************************/
+
+.space_between {
+    justify-content: space-between;
+}
+/* start breadcrumb section */
+.contact_bg {
+	background-image: url(../bg/bg_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+.contact_bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+ .gift_top_section {
+	text-align: center;
+}
+.gift_top_section h2 {
+    color: var(--Gray-White);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.gift_top_section .gift_top_nav {
+    display: flex;
+    justify-content: center;
+}
+.gift_top li a {
+    color: var(--Gray-White);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.gift_item.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    color: #fff;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+/* End breadcrumb section */
+#all_section {
+	padding: 80px 0;
+}
+/* start form section */
+.form_section h2 {
+    color: var(--Gray-900, #1D2026);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.32px;
+}
+.form_section h3 {
+    color: var(--Gray-900, #1D2026);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.recipient_form .form-group {
+    display: grid;
+    gap: 6px;
+}
+.recipient_form .form-group label {
+    color: var(--Gray-900, #1D2026);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.recipient_form .form-group .inside::placeholder {
+    color: #8C94A3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.recipient_form .form-group .inside {
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    background: var(--Gray-White, #FFF);
+    padding: 10px;
+	resize: none;
+}
+.recipient_form .form-group .inside:focus {
+	outline: none;
+	color: #FF6636;
+	border: 1px solid #FF6636;
+}
+/* end form section */
+
+/* Start gift course section */ 
+.card.gift_full_course {
+    padding: 20px;
+    border: none;
+    border: 1px solid #E9EAF0;
+}
+.gift_full_course .course_head {
+    color: var(--Gray-900, #1D2026);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.gift_course {
+    display: inline-flex;
+    gap: 10px;
+
+    img {
+        width: 120px;
+    }
+}
+.gift_course .course_details h4 {
+    color: var(--Gray-400, #A1A5B3);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.gift_course .course_details h4 span {
+    color: var(--Gray-700, #4E5566);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.gift_course .course_details .gift_description {
+    color: var(--Gray-900, #1D2026);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.gift_course .course_details .gift_price {
+    color: var(--thm-color, #FF6636);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.gift_course_top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E9EAF0;
+}
+.gift_summary {
+    padding: 20px 0;
+}
+.gift_summary h2 {
+    color: var(--Gray-900, #1D2026);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.gift_price .subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+.gift_price .subtotal span,
+.gift_price .cupondiscount span {
+    color: var(--Gray-600, #6E7485);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.gift_price .cupondiscount {
+    display: flex;
+    justify-content: space-between;
+	padding: 16px 0;
+	border-bottom: 1px solid #E9EAF0;
+}
+.gift_price p .usd {
+    color: var(--Gray-900, #1D2026);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.gift_summary .total {
+    display: flex;
+    justify-content: space-between;
+	padding-top: 16px;
+}
+.gift_summary .total span {
+    color: #202029;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.gift_summary p .usdt {
+    color: #202029;
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+/* End gift course section */ 
+
+/* Start payment method section */
+.payment-method {
+    margin-top: 50px;
+}
+.payment-method h3 {
+    color: #1D2026;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.method svg {
+  margin-right: 10px;
+}
+.method span {
+    font-size: 14px;
+	color: #4E5566;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.form_group_section {
+	padding: 20px 0;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group label {
+	margin-bottom: 5px;
+	color: var(--Gray-900, #1D2026);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+	border: 1px solid #E9EAF0;
+    outline: none;
+    height: 48px;
+}
+.form-group input:focus {
+	border-color: #FF6636;
+	color: #FF6636;
+}
+.form-group-inline {
+	display: flex;
+	gap: 10px;
+}
+.form-group-inline .form-group {
+  flex: 1;
+}
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.checkbox-group input {
+    margin-right: 10px;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-group label {
+	color: var(--Gray-700, #4E5566);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+/* End payment method section */

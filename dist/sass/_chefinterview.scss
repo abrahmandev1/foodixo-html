@@ -1,0 +1,111 @@
+#chef_interview_section {
+    padding-bottom: 80px;
+}
+
+.chef_interview_all_content {
+
+    .interview_item {
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    
+    }
+
+    .interview_image_section {
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: 20px;
+        }
+    }
+    
+}
+.interview_item:last-child {
+    margin-bottom: 0;
+  }
+  
+.quote_block {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.00) 100%);
+    padding: 30px;
+    margin-bottom: 50px;
+    font-style: italic;
+    border-left: 5px solid #ccc;
+
+    p {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 52px;
+    }
+}
+
+
+.chef_interview_social_icons {
+
+    h3 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    
+
+    
+}
+
+
+.chef_interview_social_icons_list {
+    li {
+        padding: 0 8px;
+        display: inline;
+
+        a {
+            font-size: 14px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 8px;
+            display: inline-block;
+            color: #000;
+            border: 1px solid #000;
+            transition: 0.3s ease-out;
+
+            &:hover {
+                background: #FF7A1A;
+                color: #fff;
+                border-color: #FF7A1A;
+            }
+        }
+    }
+}
+
